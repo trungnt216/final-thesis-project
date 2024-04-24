@@ -1,4 +1,4 @@
-#include "spiComm.h"
+#include "lib/spiComm.h"
 
 spiComm::spiComm() {
     /* start Init of BCM2835 and Write ADE9000 Register to defined values for Measuring - See StartUp Routine in Datasheet */

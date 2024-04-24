@@ -6,10 +6,10 @@
 #include <iostream>
 #include <string>
 
-#include "influxdb.hpp"
-#include "json.hpp"  // JSON library, e.g., nlohmann/json
-#include "spiComm.h"
-#include "storage.cpp"
+#include "lib/influxdb.hpp"
+#include "lib/json.hpp"  // JSON library, e.g., nlohmann/json
+#include "lib/spiComm.h"
+#include "lib/storage.cpp"
 #include "utils/date.cpp"
 
 using json = nlohmann::json;
@@ -94,7 +94,7 @@ int main() {
       myObjects.clear();
       outputFile.close();
     }
-    if (jsonArray["data"].size() > 20) {
+    if (jsonArray.size() > 20) {
       // tạo file mới mới.
       metterFileName =
           prefix + to_string(DateUtil::getTimeSinceEpochMillisec()) + extension;
