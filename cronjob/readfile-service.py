@@ -2,7 +2,7 @@ import json
 import sqlite3
 import time
 import schedule
-DB_NAME = "power_data.db"
+DB_NAME = "metter.db"
 TABLE_NAME = "power_records"
 
 CREATE_TABLE_QUERY = """
