@@ -18,7 +18,7 @@
     <normaloff>../../../env/source/icons/favicon.png</normaloff>../../../env/source/icons/favicon.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(15, 23, 42);</string>
+   <string notr="true">background-color: rgb(23, 23, 23);</string>
   </property>
   <property name="iconSize">
    <size>
@@ -1073,6 +1073,16 @@
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
+          <widget class="QGraphicsView" name="averageVoltage">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>91</width>
+             <height>51</height>
+            </rect>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>
@@ -1266,7 +1276,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/Setting.png</normaloff>../../../env/source/icons/Setting.png</iconset>
+            <normaloff>source/icons/Setting.png</normaloff>source/icons/Setting.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1325,7 +1335,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/voltage-metter.png</normaloff>../../../env/source/icons/voltage-metter.png</iconset>
+            <normaloff>source/icons/voltage-metter.png</normaloff>source/icons/voltage-metter.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1415,7 +1425,7 @@
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../../env/source/icons/current-metter.png</normaloff>../../../env/source/icons/current-metter.png</iconset>
+             <normaloff>source/icons/current-metter.png</normaloff>source/icons/current-metter.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -1523,7 +1533,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/three-phase.png</normaloff>../../../env/source/icons/three-phase.png</iconset>
+            <normaloff>source/icons/angle.png</normaloff>source/icons/angle.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1653,7 +1663,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/Hamonic.png</normaloff>../../../env/source/icons/Hamonic.png</iconset>
+            <normaloff>source/icons/Hamonic.png</normaloff>source/icons/Hamonic.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1712,7 +1722,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/View.png</normaloff>../../../env/source/icons/View.png</iconset>
+            <normaloff>source/icons/view-2.png</normaloff>source/icons/view-2.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1771,7 +1781,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/Analog.png</normaloff>../../../env/source/icons/Analog.png</iconset>
+            <normaloff>source/icons/Analog.png</normaloff>source/icons/Analog.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1830,7 +1840,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/digital-wave.png</normaloff>../../../env/source/icons/digital-wave.png</iconset>
+            <normaloff>source/icons/digital-wave.png</normaloff>source/icons/digital-wave.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1889,7 +1899,7 @@
           </property>
           <property name="icon">
            <iconset>
-            <normaloff>../../../env/source/icons/export.png</normaloff>../../../env/source/icons/export.png</iconset>
+            <normaloff>source/icons/export.png</normaloff>source/icons/export.png</iconset>
           </property>
           <property name="iconSize">
            <size>
