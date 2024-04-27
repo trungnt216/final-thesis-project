@@ -18,7 +18,8 @@
     <normaloff>../../../env/source/icons/favicon.png</normaloff>../../../env/source/icons/favicon.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 65, 106);</string>
+   <string notr="true">background-color: rgb(0, 65, 106);
+padding-right: 0;</string>
   </property>
   <property name="iconSize">
    <size>
@@ -27,6 +28,9 @@
    </size>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">margin: 0 0;</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QFrame" name="frame">
@@ -49,20 +53,20 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>10</y>
+            <y>30</y>
             <width>101</width>
-            <height>81</height>
+            <height>21</height>
            </rect>
           </property>
           <property name="font">
            <font>
-            <pointsize>10</pointsize>
+            <pointsize>14</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">color: rgb(255, 0, 0);</string>
+           <string notr="true">color: white;</string>
           </property>
           <property name="text">
            <string>ADE9000</string>
@@ -968,6 +972,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
         <widget class="QFrame" name="frame_36">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -978,7 +985,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
+            <y>30</y>
             <width>101</width>
             <height>16</height>
            </rect>
@@ -987,16 +994,16 @@
            <string notr="true">color: rgb(0, 255, 0);</string>
           </property>
           <property name="text">
-           <string>Connection: OK</string>
+           <string>DB Connection: OK</string>
           </property>
          </widget>
          <widget class="QLabel" name="label_25">
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>30</y>
+            <y>50</y>
             <width>101</width>
-            <height>31</height>
+            <height>21</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -1020,6 +1027,29 @@
           </property>
           <property name="text">
            <string>Temprature: 35 *C</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_35">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 255, 0);</string>
+          </property>
+          <property name="text">
+           <string>Status</string>
           </property>
          </widget>
         </widget>
@@ -1058,31 +1088,27 @@
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QFrame" name="frame_110">
+         <widget class="QLabel" name="label_16">
           <property name="geometry">
            <rect>
-            <x>0</x>
-            <y>20</y>
-            <width>111</width>
-            <height>71</height>
+            <x>10</x>
+            <y>30</y>
+            <width>101</width>
+            <height>61</height>
            </rect>
           </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/graph/images/sample-graph.png);</string>
           </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
+          <property name="text">
+           <string/>
           </property>
-          <widget class="QGraphicsView" name="averageVoltage">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>91</width>
-             <height>51</height>
-            </rect>
-           </property>
-          </widget>
+          <property name="pixmap">
+           <pixmap>source/images/sample-graph-2.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
          </widget>
         </widget>
        </item>
@@ -1135,6 +1161,28 @@
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>101</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/graph/images/sample-graph.png);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>source/images/sample-graph-2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>
@@ -1187,11 +1235,36 @@
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>101</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/graph/images/sample-graph.png);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>source/images/sample-graph-2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>
        <item>
         <widget class="QFrame" name="frame_40">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 94, 153);</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -1239,6 +1312,32 @@
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
+          <widget class="QLabel" name="label_30">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>9</y>
+             <width>111</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>58</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>
@@ -1270,6 +1369,14 @@
             <width>111</width>
             <height>61</height>
            </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid orange;
+margin-right: 2px;</string>
           </property>
           <property name="text">
            <string/>
@@ -1330,6 +1437,11 @@
             <height>61</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid rgb(0, 85, 255);;
+margin-right: 2px;</string>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -1370,22 +1482,6 @@
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QLabel" name="label_7">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>90</y>
-            <width>111</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>TextLabel</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
         </widget>
        </item>
        <item>
@@ -1396,44 +1492,33 @@
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
          </property>
-         <widget class="QFrame" name="frame_23">
+         <widget class="QPushButton" name="pushButton_3">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>109</width>
-            <height>58</height>
+            <width>111</width>
+            <height>61</height>
            </rect>
           </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid rgb(255, 255, 0);
+margin-right: 2px;</string>
           </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
+          <property name="text">
+           <string/>
           </property>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>111</width>
-             <height>61</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>source/icons/current-metter.png</normaloff>source/icons/current-metter.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>62</width>
-             <height>62</height>
-            </size>
-           </property>
-          </widget>
+          <property name="icon">
+           <iconset>
+            <normaloff>source/icons/current-metter.png</normaloff>source/icons/current-metter.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>60</width>
+            <height>60</height>
+           </size>
+          </property>
          </widget>
          <widget class="QLabel" name="label_3">
           <property name="geometry">
@@ -1461,54 +1546,6 @@
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QLabel" name="label_4">
-          <property name="geometry">
-           <rect>
-            <x>60</x>
-            <y>90</y>
-            <width>111</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>TextLabel</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_5">
-          <property name="geometry">
-           <rect>
-            <x>60</x>
-            <y>90</y>
-            <width>111</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>TextLabel</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_6">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>90</y>
-            <width>111</width>
-            <height>20</height>
-           </rect>
-          </property>
-          <property name="text">
-           <string>TextLabel</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
         </widget>
        </item>
        <item>
@@ -1527,6 +1564,11 @@
             <width>111</width>
             <height>61</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid rgb(170, 0, 255);
+margin-right: 2px;</string>
           </property>
           <property name="text">
            <string/>
@@ -1586,6 +1628,11 @@
             <width>111</width>
             <height>61</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid rgb(0, 255, 0);
+margin-right: 2px;</string>
           </property>
           <property name="text">
            <string/>
@@ -1658,6 +1705,11 @@
             <height>61</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 10px;
+border: 1px solid red;
+margin-right: 2px;</string>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -1713,9 +1765,13 @@
            <rect>
             <x>10</x>
             <y>0</y>
-            <width>111</width>
+            <width>91</width>
             <height>61</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid white;</string>
           </property>
           <property name="text">
            <string/>
@@ -1776,6 +1832,11 @@
             <height>61</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid white;
+margin-right: 2px;</string>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -1785,8 +1846,8 @@
           </property>
           <property name="iconSize">
            <size>
-            <width>60</width>
-            <height>60</height>
+            <width>40</width>
+            <height>40</height>
            </size>
           </property>
          </widget>
@@ -1835,6 +1896,11 @@
             <height>61</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid white;
+margin-right: 2px;</string>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -1844,8 +1910,8 @@
           </property>
           <property name="iconSize">
            <size>
-            <width>60</width>
-            <height>60</height>
+            <width>30</width>
+            <height>30</height>
            </size>
           </property>
          </widget>
@@ -1893,6 +1959,11 @@
             <width>111</width>
             <height>61</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 5px;
+border: 1px solid rgb(0, 85, 255);
+margin-right: 2px;</string>
           </property>
           <property name="text">
            <string/>
@@ -1943,6 +2014,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="source/resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
