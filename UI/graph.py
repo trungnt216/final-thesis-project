@@ -1,31 +1,34 @@
+from collections import deque
+from itertools import count
 import matplotlib.pyplot as plt
 import random
-from PIL import Image
-from PIL import ImageColor
+from matplotlib.animation import FuncAnimation
 
-xLable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-data1 = [220,220,220,220,220,220,220,220,220,220]
+xLable = deque(maxlen=30)
+data1 = deque(maxlen=30)
 
 data2 = data1
 
 data3 = data1
 
+index = count()
+
+def animate(i):
+    xLable.append(next(index))
+    print(xLable)
+    data1.append(random.randrange(0, 9)*0.1 + 220)
+    plt.cla()
+    plt.plot(xLable, data1)
+    plt.tight_layout()
+
+ani = FuncAnimation(plt.gcf(), animate, interval=500)
+
+
 ax = plt.axes()
 ax.set_facecolor("#00416A")
 
-for i in range(len(data1)):
-    data1[i] += random.randrange(0, 10)*0.1
-
-
-plt.plot(xLable, data1)
-for i in range(len(data1)):
-    data2[i] += random.randrange(0, 10)*0.1
-plt.plot(xLable, data2)
-for i in range(len(data1)):
-    data3[i] += random.randrange(0, 10)*0.1
-plt.plot(xLable, data3)
 plt.ylabel('Voltage')
 #hide x and y axis lable
-ax.get_xaxis().set_visible(False)
-ax.get_yaxis().set_visible(False)
+#ax.get_xaxis().set_visible(False)
+#ax.get_yaxis().set_visible(False)
 plt.show()
