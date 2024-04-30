@@ -20,7 +20,7 @@ def metter_list(request):
         #     tutorials = tutorials.filter(title__icontains=title)
         
         metter_serializer = MetterSerializer(metters, many=True)
-        return JsonResponse(metter_serializer.data, safe=False)
+        return JsonResponse({"data": metter_serializer.data}, safe=False)
         # 'safe=False' for objects serialization
  
     # elif request.method == 'POST':
