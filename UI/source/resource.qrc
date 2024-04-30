@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="graph">
-    <file>images/sample-graph-2.png</file>
-    <file>images/sample-graph.png</file>
-  </qresource>
-</RCC>
