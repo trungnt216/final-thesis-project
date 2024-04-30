@@ -85,9 +85,9 @@ def main():
 
     except psycopg2.Error as e:
         print("Error connecting to PostgreSQL:", e)
-    finally:
-        if conn:
-            conn.close()
+    # finally:
+    #     if conn:
+    #         conn.close()
 
 if __name__ == "__main__":
     main()
