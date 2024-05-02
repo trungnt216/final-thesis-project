@@ -67,4 +67,28 @@ def metter_detail(request, pk):
 #     if request.method == 'GET': 
 #         tutorials_serializer = TutorialSerializer(tutorials, many=True)
 #         return JsonResponse(tutorials_serializer.data, safe=False)
-    
+@api_view(['GET'])
+def get_latest_metter_from_3phase(request): 
+    metters = Metter.objects.all().order_by('-created_at')
+    metters_serializer = MetterSerializer(metters[0])
+    transformed_metter =  {
+        'voltage':{
+            'phaseA': metters_serializer.data['avrms'],
+            'phaseB': metters_serializer.data['bvrms'],
+            'phaseC': metters_serializer.data['cvrms'],
+        },
+        'power':{
+            'phaseA': metters_serializer.data['awatt'],
+            'phaseB': metters_serializer.data['bwatt'],
+            'phaseC': metters_serializer.data['cwatt'],
+        },
+        'current':{
+            'phaseA': metters_serializer.data['airms'],
+            'phaseB': metters_serializer.data['birms'],
+            'phaseC': metters_serializer.data['cirms'],
+        }
+    }
+    return JsonResponse({"data": transformed_metter, "status" : 'successfully'}, safe=False)
+@api_view(['GET'])
+def get_metter_graph(request):
+    return JsonResponse({"data: 'ok'"},safe= False)
