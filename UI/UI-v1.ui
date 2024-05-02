@@ -1052,6 +1052,18 @@ padding-right: 0;</string>
            <string>Status</string>
           </property>
          </widget>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>20</y>
+            <width>120</width>
+            <height>80</height>
+           </rect>
+          </property>
+          <widget class="QWidget" name="page"/>
+          <widget class="QWidget" name="page_2"/>
+         </widget>
         </widget>
        </item>
        <item>
@@ -1088,26 +1100,30 @@ padding-right: 0;</string>
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QLabel" name="label_16">
+         <widget class="QFrame" name="frame_114">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>30</y>
-            <width>101</width>
-            <height>61</height>
+            <x>60</x>
+            <y>70</y>
+            <width>111</width>
+            <height>71</height>
            </rect>
           </property>
-          <property name="styleSheet">
-           <string notr="true">background-image: url(:/graph/images/sample-graph.png);</string>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <property name="text">
-           <string/>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
           </property>
-          <property name="pixmap">
-           <pixmap>source/images/sample-graph-2.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
+         </widget>
+         <widget class="QWidget" name="visu" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>101</width>
+            <height>71</height>
+           </rect>
           </property>
          </widget>
         </widget>
@@ -1146,7 +1162,7 @@ padding-right: 0;</string>
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QFrame" name="frame_111">
+         <widget class="QFrame" name="frame_115">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -1161,28 +1177,6 @@ padding-right: 0;</string>
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <widget class="QLabel" name="label_17">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>101</width>
-             <height>61</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-image: url(:/graph/images/sample-graph.png);</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>source/images/sample-graph-2.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
          </widget>
         </widget>
        </item>
@@ -1235,28 +1229,6 @@ padding-right: 0;</string>
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <widget class="QLabel" name="label_29">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>101</width>
-             <height>61</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-image: url(:/graph/images/sample-graph.png);</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>source/images/sample-graph-2.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
          </widget>
         </widget>
        </item>
